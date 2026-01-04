@@ -6,12 +6,6 @@ DeepSeek
 HarmonyOS
 任正非
 
-比亚迪
-王传福
-
-大疆
-DJI
-
 宇树
 王兴兴
 
@@ -19,18 +13,6 @@ DJI
 灵犀
 稚晖君
 彭志辉
-
-黑神话
-冯骥
-
-哪吒
-饺子
-杨宇
-!车
-!餐
-
-京东
-刘强东
 
 字节
 bytedance
@@ -81,7 +63,31 @@ Spring AI
 
 科技
 
-水电站
-雅鲁藏布江
-
 新质生产力
+
+# --- 1. Python AI 核心生态 (新增重点) ---
+# PyTorch/TensorFlow: 深度学习基石
+# Hugging Face/Transformers: 模型调用标准
+# LangChain/LlamaIndex: Python版Agent与RAG框架事实标准
+/PyTorch|TensorFlow|Keras|JAX/i => Python深度学习
+/Hugging\s?Face|Transformers|Diffusers|PEFT|LoRA/i => 模型微调与工程
+/LangChain(?!4j)|LlamaIndex|AutoGen|CrewAI|Swarm/i => Python Agent框架
+/Streamlit|Gradio|FastAPI/i => AI应用快速开发
+
+# --- 2. Java AI 生态 (保持关注) ---
+/Spring\s?AI|LangChain4j|Semantic\s?Kernel|Deep\s?Java\s?Library|DJL/i => Java AI架构
+
+# --- 3. 核心大模型与厂商 (必知必会) ---
+/DeepSeek|OpenAI|GPT-?4|Claude\s?3|Llama\s?3|Gemini|Qwen|Mistral/i => 核心模型动态
+
+# --- 4. 向量数据库与 RAG (架构通用) ---
+# 无论用 Java 还是 Python，后端存储是一样的
+/Milvus|Pinecone|Chroma|Weaviate|Elasticsearch|Vector\s?DB/i => 向量数据库
+/RAG|Retrieval-Augmented|GraphRAG|Knowledge\s?Graph/i => RAG架构
+
+# --- 5. AI 运维与部署 (MLOps) ---
+# 模型部署、量化、推理加速
+/vLLM|Ollama|TensorRT|ONNX|Quantization|MLOps|Docker/i => 模型部署与运维
+
+# --- 6. 编程辅助工具 ---
+/Copilot|Cursor|Trae|Windsurf|Devin/i => AI编程工具
