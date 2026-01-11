@@ -1,93 +1,74 @@
-DeepSeek
-梁文锋
+keywords:
+  # ============================================================
+  # 🎯 第一梯队：技术硬核实践 (你最想看的)
+  # 策略：必须包含 "教程/实践/部署/开发/架构" 等实操词汇
+  # ============================================================
+  
+  # --- 1.1 DeepSeek 与 模型实战 ---
+  # 只要 V4, V3, 部署, 蒸馏, 本地化
+  - /DeepSeek.*(V4|V3|R1|Coder)|DeepSeek.*(部署|微调|蒸馏|本地|私有化)/i => DeepSeek实战
+  
+  # --- 1.2 AI 编程与提效工具 (Open-Code) ---
+  # 只要最新的工具发布和技巧
+  - /Open[- ]?Code|Copilot|Cursor|Trae|Windsurf|Devin|Bolt\.new/i => AI编程神器
+  
+  # --- 1.3 个人知识库与 RAG 搭建 ---
+  # 只要搭建方案，不要概念介绍
+  - /知识库.*(搭建|构建|部署)|RAG.*(实践|优化|落地)|GraphRAG|向量数据库/i => 知识库搭建
+  
+  # --- 1.4 Agent 开发组件 ---
+  # 只要具体的框架和协议
+  - /MCP|Model\s?Context\s?Protocol|LangGraph|AutoGPT|CrewAI|Dify|Coze/i => Agent组件
+  
+  # ============================================================
+  # ☕ 第二梯队：开发生态 (Java & Python)
+  # ============================================================
+  
+  # --- 2.1 Java AI ---
+  - /Spring\s?AI|LangChain4j|Semantic\s?Kernel|DJL/i => Java AI架构
+  
+  # --- 2.2 Python AI ---
+  - /LangChain|LlamaIndex|Hugging\s?Face|PyTorch/i => Python AI生态
 
-华为
-鸿蒙
-HarmonyOS
-任正非
+  # ============================================================
+  # 🛡️ 第三梯队：过滤与降噪 (重要！)
+  # 之前的泛词全部删除，改为精准的“大厂技术”
+  # ============================================================
+  
+  # 不要只监控 "华为"，要监控 "华为 昇腾/MindSpore"
+  - /MindSpore|Ascend|CANN/i => 华为AI技术
+  # 不要只监控 "字节"，要监控 "字节 Coze/豆包"
+  - /Coze|Doubao|ByteDance.*AI/i => 字节AI技术
+  # 不要只监控 "英伟达"，要监控 "CUDA/H100/NVIDIA NIM"
+  - /CUDA|NVIDIA\s?NIM|TensorRT/i => 英伟达开发栈
+  
+  # --- 1. 核心 SWE-Agent 框架与实践 ---
+  # 关注全自动写代码 Agent，如 OpenDevin, MetaGPT, SWE-bench
+  - /SWE[- ]?Agent|Software\s?Engineering\s?Agent|OpenDevin|MetaGPT|Devin|AutoCodeRover/i => 软件研发Agent
+  - /AI.*(研发流程|DevOps|CI\/CD|Code\s?Review|单元测试|UT生成)/i => AI研发效能
+  
+  # --- 2. 新一代 Coding 工具 (CLI & IDE) ---
+  # 特别关注 Claude Code, Cline (原 Claude Dev), Roo Code
+  - /Claude\s?Code|Claude\s?Dev|Cline|Roo\s?Code|Goose|Aider/i => AI命令行编程
+  
+  # ============================================================
+  # 🤖 Agent 能力与交互 (Skills & UI)
+  # ============================================================
 
-宇树
-王兴兴
-
-智元
-灵犀
-稚晖君
-彭志辉
-
-字节
-bytedance
-张一鸣
-
-特斯拉
-马斯克
-
-微软
-Microsoft
-
-英伟达
-NVIDIA
-黄仁勋
-
-AMD
-
-谷歌
-google
-gemini
-deepmind
-
-chatgpt
-openai
-sora
-
-claude
-Anthropic
-
-ai
-!gai
-人工智能
-AI Agent
-大模型
-AI开发
-Java AI开发
-Spring AI
-
-自动驾驶
-
-机器人
-
-国产
-中国
-
-芯片
-光刻机
-
-科技
-
-新质生产力
-
-# --- 1. Python AI 核心生态 (新增重点) ---
-# PyTorch/TensorFlow: 深度学习基石
-# Hugging Face/Transformers: 模型调用标准
-# LangChain/LlamaIndex: Python版Agent与RAG框架事实标准
-/PyTorch|TensorFlow|Keras|JAX/i => Python深度学习
-/Hugging\s?Face|Transformers|Diffusers|PEFT|LoRA/i => 模型微调与工程
-/LangChain(?!4j)|LlamaIndex|AutoGen|CrewAI|Swarm/i => Python Agent框架
-/Streamlit|Gradio|FastAPI/i => AI应用快速开发
-
-# --- 2. Java AI 生态 (保持关注) ---
-/Spring\s?AI|LangChain4j|Semantic\s?Kernel|Deep\s?Java\s?Library|DJL/i => Java AI架构
-
-# --- 3. 核心大模型与厂商 (必知必会) ---
-/DeepSeek|OpenAI|GPT-?4|Claude\s?3|Llama\s?3|Gemini|Qwen|Mistral/i => 核心模型动态
-
-# --- 4. 向量数据库与 RAG (架构通用) ---
-# 无论用 Java 还是 Python，后端存储是一样的
-/Milvus|Pinecone|Chroma|Weaviate|Elasticsearch|Vector\s?DB/i => 向量数据库
-/RAG|Retrieval-Augmented|GraphRAG|Knowledge\s?Graph/i => RAG架构
-
-# --- 5. AI 运维与部署 (MLOps) ---
-# 模型部署、量化、推理加速
-/vLLM|Ollama|TensorRT|ONNX|Quantization|MLOps|Docker/i => 模型部署与运维
-
-# --- 6. 编程辅助工具 ---
-/Copilot|Cursor|Trae|Windsurf|Devin/i => AI编程工具
+  # --- 3. A2UI / LAM (操作界面) ---
+  # 关注计算机使用能力 (Computer Use), 屏幕解析, UI 操作
+  - /A2UI|Agent\s?to\s?UI|Computer\s?Use|Large\s?Action\s?Model|LAM|OmniParser|Screen\s?Agent/i => UI自动化Agent
+  
+  # --- 4. Agent Skills & Tool Use ---
+  # 关注工具调用、Function Calling、技能构建
+  - /Agent\s?Skills?|Tool\s?Use|Function\s?Calling|Mcp\s?Server|Tools\s?Integration/i => Agent技能开发
+  
+  # 1. 新发布/新开源 (中英文)
+  - /AI.*(发布|推出|开源|上线|Release|Launch|Open\s?Source)/i => AI新动态兜底
+  
+  # 2. 技术突破/论文
+  - /AI.*(Paper|SOTA|Benchmark|架构|State\s?of\s?the\s?Art)/i => AI技术突破
+  
+  # 3. GitHub 趋势 (配合 GitHub Trending 平台)
+  # GitHub Trending 本身就是发现新东西最好的地方，不需要特定关键词
+  # 只要开启 GitHub 平台，它会自动推送榜单前列的项目
